@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Brandon Molina | Contacto - Portafolio Full Stack</title>
+    <meta name="description" content="Contacta a Brandon Molina, estudiante de Ingeniería en Sistemas Informáticos en Santa Ana, para conversar sobre proyectos, aprendizaje y oportunidades.">
 </head>
 <body>
 
@@ -22,27 +23,59 @@
     </header>
 
     <main>
-
-        <!-- Contacto -->
+        <!-- Formulario de contacto -->
         <section>
             <h2>Contacto</h2>
 
+            <p>Puedes comunicarte conmigo por medio de este formulario.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </p>
+
+                    <p>
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto">
+                            <option value="empleo">Oferta de empleo</option>
+                            <option value="proyecto">Proyecto</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Acepto que me contacten</label>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
             <p>
-                Puedes contactarme por correo o visitar
-                mi perfil de GitHub para conocer mis proyectos.
+                También puedes visitar mi
+                <a href="https://github.com/Brandon200310">GitHub</a>.
             </p>
-
-            <ul>
-                <li>
-                    <a href="mailto:pereznetox77@gmail.com">Correo electrónico</a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/Brandon200310">Mi GitHub</a>
-                </li>
-            </ul>
         </section>
-
     </main>
 
     <!-- Pie de pagina -->
